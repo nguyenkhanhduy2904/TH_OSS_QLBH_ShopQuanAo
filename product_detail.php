@@ -20,6 +20,7 @@ if ($id && is_numeric($id)) {
 
     if ($product) {
         if (!empty($product['MaKichThuoc']) && !empty($product['TenKichThuoc'])) {
+            //quan trong 
             $sizes[] = [
                 'MaKichThuoc' => $product['MaKichThuoc'],
                 'TenKichThuoc' => $product['TenKichThuoc']
