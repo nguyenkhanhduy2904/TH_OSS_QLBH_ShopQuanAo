@@ -40,6 +40,7 @@ if (!empty($_SESSION['cart']) && is_array($_SESSION['cart'])) {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
+ 
     <style>
         :root {
             --primary-color: #5e72e4;
@@ -315,8 +316,11 @@ if (!empty($_SESSION['cart']) && is_array($_SESSION['cart'])) {
                 &copy; <?php echo date('Y'); ?> Nguyễn Sỹ Khiêm - DH52200892
             </div>
         </div>
+        <!-- ket thuc -->
     </footer>
 
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

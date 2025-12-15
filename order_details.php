@@ -52,7 +52,7 @@ if ($orderId) {
         $error = "Lỗi kết nối CSDL: " . $e->getMessage();
     }
 }
-
+/* */
 function getStatusBadge($status) {
     switch ($status) {
         case 0: return '<span class="badge bg-warning text-dark"><i class="fas fa-clock me-1"></i> Chờ duyệt</span>';
