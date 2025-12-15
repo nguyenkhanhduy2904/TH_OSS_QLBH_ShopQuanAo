@@ -17,14 +17,12 @@ $sizes = $conn->query("SELECT * FROM kichthuoc")->fetchAll(PDO::FETCH_ASSOC);
 $id = $_GET['id'] ?? null;
 $product = null;
 $isEdit = false;
-
 if ($id) {
     $product = $productModel->find($id);
     if ($product) {
         $isEdit = true;
     }
 }
-
 $name = $product['TenSanPham'] ?? '';
 $catId = $product['MaDanhMuc'] ?? '';
 $sizeId = $product['MaKichThuoc'] ?? '';
@@ -91,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         } else {
             if ($productModel->create($data)) {
-                $success = "Thêm sản phẩm mới thành công!";
+                $success = "Thêm sản phẩm thành công!";
                 $name = $catId = $sizeId = $price = $desc = $image = '';
             } else {
                 $error = "Lỗi khi thêm vào DB.";
