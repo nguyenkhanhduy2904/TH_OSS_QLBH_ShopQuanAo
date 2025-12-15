@@ -2,7 +2,7 @@
 class Product {
     private $conn;
     private $table = 'sanpham';
-
+    /* */
     public function __construct($db) {
         $this->conn = $db;
     }
