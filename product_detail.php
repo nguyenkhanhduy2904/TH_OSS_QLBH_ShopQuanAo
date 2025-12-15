@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
         $sizeId = isset($_POST['MaKichThuoc']) ? (int)$_POST['MaKichThuoc'] : $product['MaKichThuoc'];
 
         if ($qty < 1) {
-            $error_message = 'Số lượng phải lớn hơn 0.';
+            $error_message = 'Số lượng sản phẩm phải lớn hơn 0.';
         } elseif (empty($sizeId)) {
             $error_message = 'Lỗi kích thước sản phẩm.';
         } else {
