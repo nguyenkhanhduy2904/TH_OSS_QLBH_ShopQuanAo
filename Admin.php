@@ -39,7 +39,7 @@ class Admin {
         $stmt->execute();
         return $stmt->rowCount() > 0;
     }
-
+/** */
     public function login($username, $password) {
         $sql = "SELECT MaAdmin, TenAdmin, MatKhau FROM {$this->table} WHERE TenAdmin = :username LIMIT 1";
         $stmt = $this->conn->prepare($sql);
